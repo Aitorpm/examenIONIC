@@ -1,0 +1,17 @@
+<ion-view view-title="Search">
+
+
+  <ion-content>
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search"  ng-model="search">
+    </label>
+
+    <div class="list">
+      <a class="item item-avatar"  ng-repeat="subject in subjects|filter:{name:search}" href="#/subjects/{{subject.name}}">
+        {{subject.name}}
+      </a>
+    </div>
+
+  </ion-content>
+</ion-view>

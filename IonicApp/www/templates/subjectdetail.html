@@ -1,0 +1,24 @@
+
+
+    <ion-header-bar class="bar-subheader item-input-inset" side="left">
+        <button class="button ion-chevron-left button-clear button-assertive" ng-click="goback()">
+            Back
+        </button>
+    </ion-header-bar>
+    <ion-content class="padding">
+
+        <div class="bar bar-header bar-balanced">
+            <h1 class="title">{{subject.name}}</h1>
+        </div>
+        <br>
+        <br>
+
+        <div class="list card">
+
+            <a ng-repeat="student in subject.students" href="#/tab/students/{{student.name}}" class="item item-icon-left">
+                {{student.name}}
+            </a>
+
+        </div>
+    </ion-content>
+
